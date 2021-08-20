@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 13.6px;
+  font-family: "Futura", sans-serif;
+  letter-spacing: 0.025em;
+  /* line-height: 1.6; */
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+}
+.catDetails {
+  display: inline-flexbox;
+  height: auto;
+}
+
+.mainConatiner {
+  padding: 4% 2%;
+  margin-top: 32px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+/* .mainConatiner {
+  padding-left: 10%;
+} */
+
+.productPreview {
+  width: 50%;
+}
+
+.productPreview > img {
+  width: 100%;
+}
+.productData {
+  width: 65%;
+  /* text-align: ; */
+}
+.productTitle {
+  font-family: "Futura", sans-serif;
+  /* padding-left: 40px; */
+  /* text-align: ; */
+  font-size: 35px;
+  font-weight: 600;
+  /* margin-top: 0;
+  margin-bottom: 16px; */
+}
+.productDescription {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 40px;
+  font-family: "Futura", sans-serif;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.productImage > img {
+  width: 100%;
+  max-width: 80px;
+  /* padding-left: 40px; */
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+.productImage {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 40px;
+}
+/* .selectedProductImage > img {
+  border: 2px solid teal;
+} */
+.sectionHeading {
+  padding-left: 40px;
+  font-size: 25px;
+}
+.size {
+  padding-left: 4px;
+  min-width: 40px;
+
+  border: 0;
+  text-align: center;
+  margin-right: 2px;
+
+  /* padding: 12px 240px; */
+}
+.buttonSize {
+  min-width: 40px;
+  border-color: gray;
+  border-radius: 4px;
+  background-color: lightgray;
+  border: 0;
+  text-align: center;
+  margin: 4px;
+}
+.button {
+  text-align: center;
+  padding-left: 40px;
+  padding: 10px;
+  /* background-color: black; */
+}
+.bagButton {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: transparent;
+  /* border-width: 80px; */
+}
+.price {
+  padding-left: 40px;
+  font-size: 20px;
+}

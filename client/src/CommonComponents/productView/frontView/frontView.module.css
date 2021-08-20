@@ -1,0 +1,47 @@
+.mainConatiner {
+  padding: 4% 2%;
+  margin-top: 32px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.productPreview {
+  width: 50%;
+}
+
+.productPreview > img {
+  width: 100%;
+}
+.productData {
+  width: 65%;
+  /* text-align: ; */
+}
+.productTitle {
+  font-family: "Futura", sans-serif;
+  /* padding-left: 40px; */
+  /* text-align: ; */
+  font-size: 35px;
+  font-weight: 600;
+  /* margin-top: 0;
+  margin-bottom: 16px; */
+}
+.productDescription {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 40px;
+  font-family: "Futura", sans-serif;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.sectionHeading {
+  padding-left: 40px;
+  font-size: 25px;
+}
+.price {
+  padding-left: 40px;
+  font-size: 20px;
+}
