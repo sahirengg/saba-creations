@@ -1,5 +1,0 @@
-{
-    
-"MONGO_ATLAS": "mongodb+srv://sahir:sahir94anees@cluster0.q4bb8.mongodb.net/saba-creations?retryWrites=true&w=majority",
-      "JWT_TOKEN": "thisismywebtokensecret"
-}
