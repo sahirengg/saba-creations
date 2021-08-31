@@ -1,0 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.pView {
+  display: inline-flex;
+  padding-top: 0;
+}
