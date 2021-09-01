@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.catDetails {
+  display: inline-flexbox;
+  height: auto;
+}
+
+.mainConatiner {
+  /* padding: 4% 2%; */
+  position: relative;
+  top: 3vh;
+  left: 5%;
+  margin-top: 32px;
+  height: auto;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* align-items: center; */
+}
+/* .mainConatiner {
+  padding-left: 10%;
+} */
+.bigImg {
+  /* height: auto; */
+  width: 100%;
+}
+.productPreview {
+  width: 50%;
+}
+
+.productPreview > img {
+  width: 100%;
+}
+.productData {
+  width: 65%;
+  /* height: auto; */
+  padding: 0;
+  /* text-align: ; */
+}
+.productTitle {
+  font-family: "Futura", sans-serif;
+  padding: 10px 40px;
+  text-align: left;
+  /* text-align: ; */
+  font-size: 35px;
+  font-weight: 600;
+  /* margin-top: 0;
+  margin-bottom: 16px; */
+}
+.productDescription {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 40px;
+  font-family: "Futura", sans-serif;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.productImage > img {
+  width: 100%;
+  max-width: 80px;
+  /* padding-left: 40px; */
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+.productImage {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-left: 40px;
+}
+/* .selectedProductImage > img {
+  border: 2px solid teal;
+} */
+.sectionHeading {
+  padding-left: 40px;
+  font-size: 25px;
+}
+.size {
+  /* padding-left: 40px; */
+  min-width: 40px;
+
+  border: 0;
+  margin-right: 2px;
+
+  padding: 12px 40px;
+}
+.buttonSize {
+  min-width: 40px;
+  border-color: gray;
+  border-radius: 4px;
+  background-color: lightgray;
+  border: 0;
+  text-align: center;
+  margin: 4px;
+}
+.button {
+  /* text-align: center; */
+  /* padding-left: 100px; */
+  padding: 10px 40px;
+  /* background-color: black; */
+}
+.bagButton {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: transparent;
+  padding: 5px 100px;
+
+  /* border-width: 80px; */
+}
+.price {
+  padding-left: 40px;
+  font-size: 20px;
+}
+.p {
+  padding-left: 40px;
+}
+hr {
+  margin: 35px auto;
+}
+/* .Availability {
+  padding-left: 40px;
+} */

@@ -1,0 +1,21 @@
+.pincode {
+  /* padding-left: 40px; */
+  padding: 20px 40px;
+}
+.input {
+  border-radius: 0px;
+  border-width: 1px;
+  border-color: #afafaf;
+  width: 300px;
+  border-style: solid;
+  height: 40px;
+}
+.checkPinBtn {
+  border-radius: 2px;
+  height: 40px;
+  border: 1px black solid;
+  background-color: #000111;
+  color: #ffffff;
+  border-style: solid;
+  width: 55px;
+}

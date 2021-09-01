@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,6 +14,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+
+import LoginForm from '../../Pages/loginForm/LoginForm';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -80,13 +82,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
- function PrimarySearchAppBar() {
+const PrimarySearchAppBar = () => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const [open, setOpen] = useState(true)
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const handleProfileMenuOpen = (event: any) => {
     setAnchorEl(event.currentTarget);
@@ -98,6 +105,7 @@ const useStyles = makeStyles((theme) => ({
 
   const handleMenuClose = () => {
     setAnchorEl(null);
+    setOpen(true);
     handleMobileMenuClose();
   };
 
@@ -175,7 +183,7 @@ const useStyles = makeStyles((theme) => ({
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-          <span>Saba Creations Bareilly</span>
+            <span>Saba Creations Bareilly</span>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -228,6 +236,7 @@ const useStyles = makeStyles((theme) => ({
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
+      <LoginForm open={open} handleClose={handleClose} />
     </div>
   );
 }
