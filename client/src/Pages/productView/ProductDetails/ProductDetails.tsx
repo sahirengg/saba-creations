@@ -3,6 +3,7 @@ import classes from './productdetails.module.css'
 import { Grid } from '@material-ui/core'
 import {DataContext} from "../../../providers/Data-provider/data-context";
 import Counter from '../counter/Counter'
+import InnerImageZoom from 'react-inner-image-zoom';
 
 import SidePics from '../SidePics/SidePics'
 import ReactImageMagnify from 'react-image-magnify';
@@ -42,18 +43,7 @@ console.log(mock)
                 
                 <div className={classes.mainConatiner}>
                     <div className={classes.productPreview}>
-                        <ReactImageMagnify {...{
-    smallImage: {
-        alt: 'big image',
-        isFluidWidth: true,
-        src: imgSrc
-    },
-    largeImage: {
-        src: imgSrc,
-        width: 1200,
-        height: 1800
-    }
-}} />
+                        <InnerImageZoom zoomSrc={imgSrc} src={imgSrc} />
 
                     </div>
 

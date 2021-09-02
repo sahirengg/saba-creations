@@ -1,7 +1,9 @@
 import React from 'react';
 import HomePage from './Pages/homePage/homepage';
+import CatDetails from './Pages/productView/ProductDetails/ProductDetails';
+
 import './App.css'
-import { Switch, BrowserRouter as Router } from "react-router-dom";
+import {Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 
 function App() {
@@ -9,7 +11,8 @@ function App() {
     // <div className="App">
     <Router>
       <Switch>
-        <HomePage />
+       <Route exact path="/" component={HomePage} />
+       <Route exact path="/cat-details" component={CatDetails} />
       </Switch>
 
     </Router>
